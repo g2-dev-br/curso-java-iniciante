@@ -2,61 +2,48 @@ public class Operadores{
     public static void main(String[] args){
         
         // < > <= >= == !=
+        // true - false
+        int a = 10;
+        int b = 15;
         
-        int x = 10;
-        int y = 15;
+        System.out.println(a < b);
+        System.out.println(a > b);
+        System.out.println(5 <= 5); //true
+        System.out.println(5 >= 5); // true
+        System.out.println(10 == a); // true
+        System.out.println(b != 15); // false
         
-        System.out.println(x > y); // true | false
-        System.out.println(x < y);
-        System.out.println(9 <= y); // true
-        System.out.println(x >= 3); // true
-        System.out.println(x >= 30); //false
-        System.out.println(x == 10); //true
-        System.out.println(x != 10); // false
+        System.out.println("---------------------");
+        System.out.println("Giovani" == "Giovani");
+        System.out.println("Giovani" != "Giovani");
+        System.out.println("Giovani" == "giovani");
         
-        System.out.println("========================");
-        System.out.println("Operadores lógicos");
         
+        System.out.println("Operadores Lógicos");
         // && || !
         
-        double z = 15;
-        double k = 31;
+        // && -> true && true
+        System.out.println(a == 10 && b == 15); // true
+        System.out.println(a == 11 && b == 15);// false
+        System.out.println(a == 10 && b == 14); // false
+        System.out.println(a == 11 && b == 11); // false
         
-        boolean r = x < y && z < k;
-        System.out.println(r); // true
+        // || -> true || false
+        System.out.println("----------------------");
+        System.out.println(a == 10 || b == 15); // true
+        System.out.println(a == 11 || b == 15); // true
+        System.out.println(a == 10 || b == 14); // true
+        System.out.println(a == 11 && b == 11); // false
         
-        boolean r1 = x > y && z > k;
-        System.out.println(r1); // false
+        //!
+        System.out.println("----------------------");
+        System.out.println(!(a == 10) && b == 15); // false
+        System.out.println(!(a == 10 && b == 15)); // false
         
-        boolean r2 = 10 == 10 && 2 > 5;
-        System.out.println(r2); // false
+        System.out.println(!(a == 11 && b == 11)); //true
         
-        boolean r3 = 10 != 10 && 2 < 5;
-        System.out.println(r3); // false
         
-
-        System.out.println("OU");
         
-        boolean ou1 = x < y || z < k;
-        System.out.println(ou1); // true
-        
-        boolean ou2 = x > y || z > k;
-        System.out.println(ou2); // false
-        
-        boolean ou3 = 10 == 10 || 2 > 5;
-        System.out.println(ou3); // true
-        
-        boolean ou4 = 10 != 10 || 2 < 5;
-        System.out.println(ou4); // true
-        
-    
-        System.out.println("!");
-        
-        boolean neg = !(10 == 10) && 2 == 2;
-        System.out.println(neg); // false
-        
-        boolean neg1 = !(10 == 11) && 2 == 2;
-        System.out.println(neg1); // true
         
     }
 }
